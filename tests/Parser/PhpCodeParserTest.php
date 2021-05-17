@@ -55,7 +55,7 @@ namespace Mtarld\SymbokBundle\Tests\Parser {
             $autoloaderFinder = new AutoloadFinder('Mtarld\SymbokBundle\Tests\Fixtures\Files');
 
             $this->expectException(IOException::class);
-            $this->expectExceptionMessage("Cannot read file 'foo'. Exception: file_get_contents(foo): failed to open stream: No such file or directory");
+            $this->expectExceptionMessage("Cannot read file 'foo'. Exception: file_get_contents(foo): Failed to open stream: No such file or directory");
             (new PhpCodeParser($autoloaderFinder))->parseStatementsFromPath('foo');
         }
 

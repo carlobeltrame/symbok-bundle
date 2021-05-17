@@ -19,6 +19,7 @@ use Mtarld\SymbokBundle\Annotation\Getter;
 class Product3
 {
     /**
+     * @ORM\Id
      * @ORM\Column(type="integer", nullable=true)
      * @Getter()
      */
